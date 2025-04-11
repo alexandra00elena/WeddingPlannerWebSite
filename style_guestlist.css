@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4e1; /* Crem deschis */
+    color: #333;
+}
+
+header {
+    background-color: #f4e3c2; /* O nuanță de roz gold */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8c6a3b; /* Nuanță aurie */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#guest-list {
+    margin: 20px auto;
+    width: 80%;
+}
+
+button {
+    background-color: #8c6a3b; /* Nuanță aurie */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}

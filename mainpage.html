@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela & Alin - Pagina Principală</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="mainpage.html" class="heart">&#9829;</a></li>
+                <li class="auth"><a href="login.html">Login</a></li>
+                <li class="auth"><a href="signup.html">Sign Up</a></li>
+                <li class="account"><a href="#">Account</a></li>
+                <li><a href="#">Cheltuieli</a></li>
+                <li><a href="#">Invitații</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay">
+            <div class="hero-content">
+                <h1>Gabriela & Alin</h1>
+                <p>~ 24.08.2024 ~</p>
+                <p id="countdown"></p>
+                <a href="planner.html" class="cta-button">Începe Planificarea</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Contor pentru nuntă
+        function updateCountdown() {
+            const weddingDate = new Date("2024-08-24T00:00:00").getTime();
+            const now = new Date().getTime();
+            const diff = weddingDate - now;
+            
+            if (diff > 0) {
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                document.getElementById("countdown").innerText = `Mai sunt ${days} zile până la marele eveniment!`;
+            } else {
+                document.getElementById("countdown").innerText = "Astăzi este ziua cea mare! 🎉";
+            }
+        }
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+
+        // Meniu mobil
+        document.getElementById("mobile-menu").addEventListener("click", function() {
+            document.getElementById("nav-menu").classList.toggle("active");
+        });
+    </script>
+</script>
+</body>
+</html>

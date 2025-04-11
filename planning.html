@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriela & Alin - Organizarea Programului Nunții</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap">
+    <link rel="stylesheet" href="style.css"> <!-- Fișierul CSS principal -->
+    <link rel="stylesheet" href="styleplanning.css"> <!-- Fișierul CSS specific paginii -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="mainpage.html" class="heart">&#9829;</a></li>
+                <li class="auth"><a href="mainpage.html">Login</a></li>
+                <li class="auth"><a href="#">Sign Up</a></li>
+                <li class="account"><a href="#">Account</a></li>
+                <li><a href="#">Cheltuieli</a></li>
+                <li><a href="#">Invitații</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="wedding-schedule">
+            <label for="moment">Denumirea momentului:</label>
+            <input type="text" id="moment" name="moment" required>
+
+            <label for="location">Locația:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="time">Ora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Adaugă moment</button>
+        </form>
+
+        <h2>Programul nunții:</h2>
+        <ul id="schedule-list">
+            <!-- Lista programului va fi populată aici -->
+        </ul>
+
+        <h3>Suggestions for Organizing:</h3>
+        <ul>
+            <li>Începe cu o întâlnire pentru a discuta detaliile.</li>
+            <li>Împarte programul pe categorii (ceremonie, petrecere, etc.).</li>
+            <li>Verifică disponibilitatea locațiilor înainte de a face rezervări.</li>
+            <li>Stabilește un timp buffer între momente pentru eventuale întârzieri.</li>
+        </ul>
+    </main>
+
+    <script src="script_planning.js"></script>
+</body>
+</html>
